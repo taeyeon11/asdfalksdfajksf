@@ -26,12 +26,10 @@ if(self.value === 'night'){
   Body.setColor('white');
   self.value = 'day';
   Links.setColor('powderblue');
-  alert("Good morning");
 } else {
   Body.setBackgroundColor('white');
   Body.setColor('black');
   self.value = 'night';
   Links.setColor('blue');
-  alert("Good night");
 }
 }
