@@ -4,20 +4,54 @@
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="color.js"></script>
+  <style>
+    body{
+      margin:0;
+    }
+    #night_day{
+      font-size: 20px;
+      padding: 10px 15px;
+      text-align: center;
+    }
+    h1{
+     border-bottom:1px gray solid;
+     text-align:center;
+     font-size:50px;
+     padding:10px;
+     margin:0;
+    }
+    #list_button{
+      border-right:1px gray solid;
+      padding:15px;
+    }
+    #all{
+      display:grid;
+      grid-template-columns: 130px 1fr;
+    }
+    #article{
+      padding:10px;
+    }
+  </style>
   </head>
   <body>
     <h1>나라정리</h1>
+    <div id="all">
+     <div id="list_button">
+       <input id='night_day' type="button" value="night" onclick="
+       nightDayHandler(this);
+       ">
     <ol>
       <li><a href="그리스.html">그리스</a></li>
       <li><a href="이집트.html">이집트</a></li>
       <li><a href="베트남.html">베트남</a></li>
       </ol>
+      </div>
+      <div id="article">
       <h2>베트남</h2>
-      <input id='night_day' type="button" value="night" onclick="
-      nightDayHandler(this);
-      ">
 <p>홍 강은 북부지역에, 메콩강은 남부지역에 물을댄다. 국토의 3분의 2가 숲. 북부는 사계절이 나타나고, 남부는 여름날씨가 계속되고 크게 건기와 우기로 나뉨</p>
 <p>도시 : 하노이(수도), 호이안, 나짱, 달랏</p>
 <p>세계유산 : 미선 유적, 퐁냐께방 국립 공원, 후에 역사 지구</p>
-<img src="베트남.jpg">
+<img src="베트남.jpg" width=40%>
+</div>
+</div>
       </body>
